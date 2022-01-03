@@ -1,0 +1,82 @@
+/*Font Families*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Ubuntu:wght@500&display=swap');
+
+body {
+    background-color: tomato;
+}
+
+.machine-container {
+    background-color: lightseagreen;
+    padding: 20px 20px;
+}
+
+.ball {
+    font-size: 15px;
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:invalid {
+    border: 3px solid red;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;    
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.submit-btn {
+  text-align: center;
+  margin-bottom: 50px; 
+}
+
+.submit {
+    font-family: Poppins;
+    font-weight: bold;
+    background-color: lightblue;
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.title-one {
+    text-align: center;
+    font-family: Ubuntu;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.title-two {
+    text-decoration: underline;
+    font-family: Poppins;
+    text-align: center;
+}
+
+.result {
+    font-family: Poppins;
+    text-align: center;
+}
+
+/* Hide arrows from number(balls) inputs */
+
+    /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+    /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
