@@ -1,3 +1,13 @@
+//Trigger Button Click on Keyboard's Enter
+
+var lastInput = document.getElementById("ballF");
+lastInput.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        generate();
+    }
+});
+
 function generate() {
     //Result Section
     var ballOne = document.getElementById("ballOne");
