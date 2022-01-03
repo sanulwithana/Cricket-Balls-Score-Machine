@@ -28,9 +28,16 @@ function generate() {
     ballThree.innerHTML = "3rd: " + a
     ballFour.innerHTML = "4th: " + b
     ballFive.innerHTML = "5th: " + c
-    ballSix.innerHTML = "6th: " + d
+    ballSix.innerHTML = "Last: " + d
     safeOver.innerHTML = "Safe: " + safe
 }
+
+var form = document.getElementById('submitButton');
+
+form.addEventListener('click', function() {
+      form.reset();
+    });
+
 
 //AutoFocus Input
 function clickEvent(first,last){
