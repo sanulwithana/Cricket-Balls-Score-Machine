@@ -21,6 +21,12 @@ body {
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 626px) {
+    .ball {
+        width: 15%;
+    }
+}
+
 input:invalid {
     border: 3px solid red;
 }
